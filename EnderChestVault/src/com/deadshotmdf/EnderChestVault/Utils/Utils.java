@@ -46,9 +46,18 @@ public class Utils {
 	public int getLevel(String perm) {
 		String p = perm;
 		String[] s = p.split("\\.");
-		int i = Integer.parseInt(s[1]);
+		int i = ii(s[1]);
 		
 		return i;
+	}
+	
+	int ii(String s) {
+		try {
+			return Integer.parseInt(s);
+		}
+		catch(NumberFormatException e){
+			return 0;
+		}
 	}
 	
 	public List<ItemStack> retrievePage(Player player,int id){
