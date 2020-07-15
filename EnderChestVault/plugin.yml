@@ -1,0 +1,9 @@
+name: EnderChestVault
+main: com.deadshotmdf.EnderChestVault.Main
+author: DeadshotMDF
+version: 1.0
+commands:
+   enderchest:
+      aliases: ec
+   enderchestreload:
+      aliases: ecreload
